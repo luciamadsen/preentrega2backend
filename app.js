@@ -7,8 +7,7 @@ const viewRoutes = require('./routes/viewRoutes');
 
 const app = express();
 
-
-mongoose.connect('mongodb://localhost:27017/myapp', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://lunesdam:<password>@cluster0.6toldtb.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
